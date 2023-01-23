@@ -1,0 +1,31 @@
+.current-weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    &-temp {
+        font-family: 'Unbounded', cursive;
+        font-weight: 900;
+        font-size: 96px;
+        transform: translate(-25px, 50px);
+        display: flex;
+        
+        &-type {
+            font-size: 32px;
+            transform: translate(0px, 10px);
+        }
+    }
+    &-icon {
+        transform: translate(25px, -30px);
+        align-self: flex-end;
+        width: 100px;
+        height: 100px;
+    }
+    &-type{
+        transform: translate(-25px, 50px);
+        font-size: 32px;
+        text-align: left;
+        font-weight: 900;
+    }
+}

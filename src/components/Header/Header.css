@@ -1,0 +1,14 @@
+.weather-location {
+    text-align: left;
+}
+
+.weather-location-pin {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.weather-location-name {
+    font-size: 24px;
+    flex-grow: 1;
+}

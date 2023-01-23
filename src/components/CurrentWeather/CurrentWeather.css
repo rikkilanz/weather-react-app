@@ -1,0 +1,30 @@
+.current-weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.current-weather-temp {
+  font-family: "Unbounded", cursive;
+  font-weight: 900;
+  font-size: 96px;
+  transform: translate(-25px, 50px);
+  display: flex;
+}
+.current-weather-temp-type {
+  font-size: 32px;
+  transform: translate(0px, 10px);
+}
+.current-weather-icon {
+  transform: translate(25px, -30px);
+  align-self: flex-end;
+  width: 100px;
+  height: 100px;
+}
+.current-weather-type {
+  transform: translate(-25px, 50px);
+  font-size: 32px;
+  text-align: left;
+  font-weight: 900;
+}/*# sourceMappingURL=CurrentWeather.css.map */
