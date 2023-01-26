@@ -1,50 +1,19 @@
 import React from "react";
 import './ForecastWeather.css';
 import weatherIcon from '../../images/sun-icon.svg';
+import { loadForecastData } from "../../data/weather-data.jsx";
+import Loader from "../Loader/Loader";
 
 export function ForecastWeather() {
+    loadForecastData();
     return(
-        <div className="weather-forecast">
-            <ul className="d-flex weather-forecast-container">
-                <li className="weather-forecast-info">
-                    <h4 className="weather-forecast-temp">-22<span className="weather-forecast-temp-type">&#xb0;C</span></h4>
-                    <img className="weather-forecast-icon" src={weatherIcon} alt="" />
-                    <p>12AM</p>
-                </li>
-                <li className="weather-forecast-info">
-                    <h4 className="weather-forecast-temp">-22<span className="weather-forecast-temp-type">&#xb0;C</span></h4>
-                    <img className="weather-forecast-icon" src={weatherIcon} alt="" />
-                    <p>3AM</p>
-                </li>
-                <li className="weather-forecast-info">
-                    <h4 className="weather-forecast-temp">-22<span className="weather-forecast-temp-type">&#xb0;C</span></h4>
-                    <img className="weather-forecast-icon" src={weatherIcon} alt="" />
-                    <p>6AM</p>
-                </li>
-                <li className="weather-forecast-info">
-                    <h4 className="weather-forecast-temp">-22<span className="weather-forecast-temp-type">&#xb0;C</span></h4>
-                    <img className="weather-forecast-icon" src={weatherIcon} alt="" />
-                    <p>9AM</p>
-                </li>
-                <li className="weather-forecast-info">
-                    <h4 className="weather-forecast-temp">-22<span className="weather-forecast-temp-type">&#xb0;C</span></h4>
-                    <img className="weather-forecast-icon" src={weatherIcon} alt="" />
-                    <p>12PM</p>
-                </li>
-                <li className="weather-forecast-info">
-                    <h4 className="weather-forecast-temp">-22<span className="weather-forecast-temp-type">&#xb0;C</span></h4>
-                    <img className="weather-forecast-icon" src={weatherIcon} alt="" />
-                    <p>3PM</p>
-                </li>
-                <li className="weather-forecast-info">
-                    <h4 className="weather-forecast-temp">-22<span className="weather-forecast-temp-type">&#xb0;C</span></h4>
-                    <img className="weather-forecast-icon" src={weatherIcon} alt="" />
-                    <p>3PM</p>
-                </li>
-                <li className="weather-forecast-info">
-                    <h4 className="weather-forecast-temp">-22<span className="weather-forecast-temp-type">&#xb0;C</span></h4>
-                    <img className="weather-forecast-icon" src={weatherIcon} alt="" />
-                    <p>3PM</p>
+        <div className="forecast-weather">
+            <h3 style={{textAlign: 'left', fontWeight: 800, marginBottom: '5px'}}>Tomorrow</h3>
+            <ul className="d-flex forecast-weather-container">
+                 <li className="forecast-weather-info">
+                    <h4 className="forecast-weather-temp">-22<span className="forecast-weather-temp-type">&#xb0;C</span></h4>
+                    <img className="forecast-weather-icon" src={weatherIcon}  alt="" />
+                    <p className="forecast-weather-time">12AM</p>
                 </li>
             </ul>
         </div>

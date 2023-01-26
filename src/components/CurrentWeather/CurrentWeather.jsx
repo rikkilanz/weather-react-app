@@ -3,12 +3,11 @@
 import { React } from "react";
 import './CurrentWeather.css';
 import weatherIcon from '../../images/sun-icon.svg';
-import '../../data/weather-data.js'
-import { loadData } from "../../data/weather-data.js";
+import { loadCurrentData } from "../../data/weather-data.jsx";
 import Loader from "../Loader/Loader";
 
 function CurrentWeather (){
-    loadData();
+    loadCurrentData();
     return (
         <div className="current-weather">
             <Loader />
