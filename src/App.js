@@ -6,6 +6,7 @@ import Header from './components/Header'
 import './styles/main.css'
 import ForecastWeather from "./components/ForecastWeather";
 import MessageOfTheDay from "./components/MessageOfTheDay";
+import Loader from "./components/Loader";
 
 function App() {
   return (

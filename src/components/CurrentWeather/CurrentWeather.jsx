@@ -3,8 +3,11 @@
 import { React } from "react";
 import './CurrentWeather.css';
 import weatherIcon from '../../images/sun-icon.svg';
+import '../../data/weather-data.js'
+import { loadData, currentWeather } from "../../data/weather-data.js";
 
 function CurrentWeather (){
+    loadData();
     return (
         <div className="current-weather">
             <div className="d-flex flex-direction-c">
