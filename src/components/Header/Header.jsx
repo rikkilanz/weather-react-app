@@ -9,7 +9,7 @@ export function Header(){
             <div className="weather-location d-flex align-items-c">
                 <img className="weather-location-pin" src={locationPin} alt=""/>
                 <h1 className="weather-location-name">Vancouver, BC</h1>
-                <img className="search-icon" src={searchIcon} alt="" height="20" width="20"/>
+                {/* <img className="search-icon" src={searchIcon} alt="" height="20" width="20"/> */}
             </div>
         </div>
     )
