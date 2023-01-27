@@ -8,7 +8,7 @@ export function Header(){
         <div className="header">
             <div className="weather-location d-flex align-items-c">
                 <img className="weather-location-pin" src={locationPin} alt=""/>
-                <h1 className="weather-location-name">Vancouver, BC</h1>
+                <h1 className="weather-location-name"></h1>
                 {/* <img className="search-icon" src={searchIcon} alt="" height="20" width="20"/> */}
             </div>
         </div>
