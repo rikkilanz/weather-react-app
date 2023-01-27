@@ -31,12 +31,11 @@ export function ForecastWeather() {
         }
     }
 
-    function DisplayForecast(data){
+    function DisplayForecast({data}){
         return (
             <div className="forecast-weather">
                 <h3 style={{textAlign: 'left', fontWeight: 800, marginBottom: '15px'}}>Tomorrow</h3>
                 <ul className="d-flex forecast-weather-container">
-                    
                 </ul>
             </div>
         )
@@ -88,7 +87,5 @@ export function ForecastWeather() {
     // Finally, we check if there is no data or data is false
     if(!data) return null;
     //Finally, if all of those passed, we continue to finally display the data we've fetched
-        return <DisplayForecast data={setData}/>
-        // return <div className="forecast-weather"><h3 style={{textAlign: 'left', fontWeight: 800, marginBottom: '15px'}}>Tomorrow</h3><ul className="d-flex forecast-weather-container">{forecastWeather(setData)}</ul></div>
-        
+    if(data) return (<DisplayForecast data={data} />) 
 }
