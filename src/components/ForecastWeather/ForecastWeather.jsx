@@ -5,9 +5,19 @@ import { loadForecastData } from "../../data/weather-data.jsx";
 import Loader from "../Loader/Loader";
 import { useState } from 'react';
 
-export function ForecastWeather() {
+export function DisplayForecast(){
+    return (
+        <div className="forecast-weather">
+            <h3 style={{textAlign: 'left', fontWeight: 800, marginBottom: '15px'}}>Tomorrow</h3>
+            <ul className="d-flex forecast-weather-container">
+            </ul> 
+        </div>
+    )
+}
 
+export function ForecastWeather() {
     function forecastWeather(data){
+        console.log(data)
         var forecastContainer = document.querySelector('.forecast-weather-container');
         forecastContainer.innerHTML = '';
         // For every iteration:
@@ -31,15 +41,7 @@ export function ForecastWeather() {
         }
     }
 
-    function DisplayForecast({data}){
-        return (
-            <div className="forecast-weather">
-                <h3 style={{textAlign: 'left', fontWeight: 800, marginBottom: '15px'}}>Tomorrow</h3>
-                <ul className="d-flex forecast-weather-container">
-                </ul>
-            </div>
-        )
-    }
+    
     // We store the api key in a variabble
     // we hard set the coordinates of Vancouver currently, but I'd like to make this dynamic in the future
     const API_KEY = '170ca814a8176bd80dd32e7c19f25524';
@@ -57,10 +59,12 @@ export function ForecastWeather() {
     const [loading, setLoading] = useState(false)
     // We are creating 3 different types of states base on this app
     // one for data (whether its loaded or not), another is for error (checking if there is an error during load of data) and finally for loading (which has two state, whether its looking for data, or it already has data)
+    // const [mount, setMount] = useState(true);
 
     // A useEffect is called at an instant. Once it is called at an instant, we follow with a set of code blocks to run such as loading data for fetching the data.
     // During this fetch data
     useEffect(() =>{
+        
         // When use effect is run, we set the state of loading to true, this will be related later where if the loading is true, we return/display the Loader component
         setLoading(true);
         // We place the the link API query to a variable, where we call it later. it doesnt have to be in a variable
@@ -87,5 +91,11 @@ export function ForecastWeather() {
     // Finally, we check if there is no data or data is false
     if(!data) return null;
     //Finally, if all of those passed, we continue to finally display the data we've fetched
-    if(data) return (<DisplayForecast data={data} />) 
+    // if(data) return (<DisplayForecast data={data} />)
+    if(data) forecastWeather(data);
+    // what i want to do:
+    // display the HTML divs by calling DisplayForecastfirst before appending child.
+    // Once HTML is loaded, I can then call forecastWeather() to append child elements with data inserted in it.
+
+
 }

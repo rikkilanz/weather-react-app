@@ -4,7 +4,7 @@ import './MessageOfTheDay.css';
 function MessageOfTheDay() {
     return(
         <div className="motd">
-            <h5 className="message">Touch grass kid.</h5>
+            <div className="message"><h5 className="message">This is Today Weather!</h5></div>
             <p className="copyright">Built with React.js | &copy; Rikki Soriano</p>
         </div>
     )

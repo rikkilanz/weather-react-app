@@ -17,7 +17,7 @@
   transform: translate(0px, 10px);
 }
 .current-weather-icon {
-  transform: translate(25px, -30px);
+  transform: translate(45px, -10px);
   align-self: flex-end;
   width: 100px;
   height: 100px;

@@ -1,12 +1,11 @@
 import React from "react";
-import logo from './logo.svg';
 import './App.css';
 import CurrentWeather from './components/CurrentWeather'
 import Header from './components/Header'
 import './styles/main.css'
 import ForecastWeather from "./components/ForecastWeather";
 import MessageOfTheDay from "./components/MessageOfTheDay";
-import Loader from "./components/Loader";
+import { DisplayForecast } from "./components/ForecastWeather/ForecastWeather";
 
 function App() {
   return (
@@ -15,6 +14,7 @@ function App() {
       <div className="card-component-weather">
         <Header />
         <CurrentWeather />
+        <DisplayForecast />
         <ForecastWeather />
       </div>
     </div>
