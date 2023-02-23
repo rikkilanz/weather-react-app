@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import './ForecastWeather.css';
-import weatherIcon from '../../images/sun-icon.svg';
-import { loadForecastData } from "../../data/weather-data.jsx";
 import Loader from "../Loader/Loader";
 import { useState } from 'react';
 
