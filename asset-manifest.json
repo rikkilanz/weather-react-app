@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rikkilanz/weather-react-app/static/css/main.ea4b78c0.css",
+    "main.js": "/rikkilanz/weather-react-app/static/js/main.e3ee5f56.js",
+    "static/media/location-pin-icon.svg": "/rikkilanz/weather-react-app/static/media/location-pin-icon.351870b901810823cc7db9f86f4e54f8.svg",
+    "index.html": "/rikkilanz/weather-react-app/index.html",
+    "static/media/search-icon.svg": "/rikkilanz/weather-react-app/static/media/search-icon.3f37cde613e5f32d19b5d94937283428.svg",
+    "main.ea4b78c0.css.map": "/rikkilanz/weather-react-app/static/css/main.ea4b78c0.css.map",
+    "main.e3ee5f56.js.map": "/rikkilanz/weather-react-app/static/js/main.e3ee5f56.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea4b78c0.css",
+    "static/js/main.e3ee5f56.js"
+  ]
+}
