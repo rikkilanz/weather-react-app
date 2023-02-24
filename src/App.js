@@ -6,6 +6,7 @@ import './styles/main.css'
 import ForecastWeather from "./components/ForecastWeather";
 import MessageOfTheDay from "./components/MessageOfTheDay";
 import { DisplayForecast } from "./components/ForecastWeather/ForecastWeather";
+import { PortfolioFBA } from "./components/PortfolioFBA/PortfolioFBA";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <CurrentWeather />
         <DisplayForecast />
         <ForecastWeather />
+        <PortfolioFBA />
       </div>
     </div>
   );

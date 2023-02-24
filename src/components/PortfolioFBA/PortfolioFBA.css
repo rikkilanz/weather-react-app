@@ -1,0 +1,35 @@
+/* Rikki Soriano Back to Portfolio Button */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+.back-to-portfolio {
+    position: fixed;
+    background-color: white;
+    width: 200px;
+    height: 50px;
+    z-index: 99999;
+    left: 50px;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: #FE950B;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.back-to-portfolio:hover {
+    text-decoration: none;
+    color: white;
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0px 5px 0px 0px rgba(0,0,0,0.75); 
+    box-shadow: 0px 5px 0px 0px rgba(0,0,0,0.75);
+}
+
+.back-to-portfolio img {
+    filter: invert(1);
+    height: 24px;
+}
